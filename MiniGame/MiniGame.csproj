@@ -57,6 +57,12 @@
     <Compile Include="Frmタイマー.Designer.cs">
       <DependentUpon>Frmタイマー.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm時計.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm時計.Designer.cs">
+      <DependentUpon>Frm時計.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm電卓.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Frmタイマー.resx">
       <DependentUpon>Frmタイマー.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm時計.resx">
+      <DependentUpon>Frm時計.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm電卓.resx">
       <DependentUpon>Frm電卓.cs</DependentUpon>

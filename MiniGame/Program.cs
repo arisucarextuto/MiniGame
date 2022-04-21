@@ -18,7 +18,7 @@ namespace MiniGame
             //ApplicationContext ac = new ApplicationContext();
             //ac.MainForm = new Frmメニュー();
 
-            ClsForm.Instance.Ac.MainForm = new Frmメニュー();
+            ClsForm.Instance.Ac.MainForm = new Frm時計();
             Application.Run(ClsForm.Instance.Ac);
         }
     }
