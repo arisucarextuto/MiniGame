@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5AF8A3BA-2F04-4D0F-A317-11D2D1FB849F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MiniGame</RootNamespace>
+    <AssemblyName>MiniGame</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cls\ClsForm.cs" />
+    <Compile Include="Cls\ClsPiece.cs" />
+    <Compile Include="Cls\ClsPuzzle.cs" />
+    <Compile Include="Cls\ClsUtil.cs" />
+    <Compile Include="Const.cs" />
+    <Compile Include="Frmタイマー.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmタイマー.Designer.cs">
+      <DependentUpon>Frmタイマー.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm電卓.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm電卓.Designer.cs">
+      <DependentUpon>Frm電卓.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\Frmパズル.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\Frmパズル.Designer.cs">
+      <DependentUpon>Frmパズル.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\Frmもぐらたたき.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\Frmもぐらたたき.Designer.cs">
+      <DependentUpon>Frmもぐらたたき.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmカレンダー.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmカレンダー.Designer.cs">
+      <DependentUpon>Frmカレンダー.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmカレンダー管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmカレンダー管理.Designer.cs">
+      <DependentUpon>Frmカレンダー管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\Frmスロット.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\Frmスロット.Designer.cs">
+      <DependentUpon>Frmスロット.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\Frmじゃんけん.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\Frmじゃんけん.Designer.cs">
+      <DependentUpon>Frmじゃんけん.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\Frmマインスイーパー.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\Frmマインスイーパー.Designer.cs">
+      <DependentUpon>Frmマインスイーパー.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmメニュー.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmメニュー.Designer.cs">
+      <DependentUpon>Frmメニュー.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmログイン.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmログイン.Designer.cs">
+      <DependentUpon>Frmログイン.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm在庫更新.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm在庫更新.Designer.cs">
+      <DependentUpon>Frm在庫更新.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm在庫検索.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm在庫検索.Designer.cs">
+      <DependentUpon>Frm在庫検索.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm画像読込み.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm画像読込み.Designer.cs">
+      <DependentUpon>Frm画像読込み.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\Frm神経衰弱.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\Frm神経衰弱.Designer.cs">
+      <DependentUpon>Frm神経衰弱.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masu.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frmタイマー.resx">
+      <DependentUpon>Frmタイマー.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm電卓.resx">
+      <DependentUpon>Frm電卓.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\Frmパズル.resx">
+      <DependentUpon>Frmパズル.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\Frmもぐらたたき.resx">
+      <DependentUpon>Frmもぐらたたき.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmカレンダー.resx">
+      <DependentUpon>Frmカレンダー.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmカレンダー管理.resx">
+      <DependentUpon>Frmカレンダー管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\Frmスロット.resx">
+      <DependentUpon>Frmスロット.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\Frmじゃんけん.resx">
+      <DependentUpon>Frmじゃんけん.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\Frmマインスイーパー.resx">
+      <DependentUpon>Frmマインスイーパー.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmメニュー.resx">
+      <DependentUpon>Frmメニュー.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmログイン.resx">
+      <DependentUpon>Frmログイン.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm在庫更新.resx">
+      <DependentUpon>Frm在庫更新.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm在庫検索.resx">
+      <DependentUpon>Frm在庫検索.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm画像読込み.resx">
+      <DependentUpon>Frm画像読込み.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\Frm神経衰弱.resx">
+      <DependentUpon>Frm神経衰弱.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\グー.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\チョキ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\パー.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
