@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MiniGame.Cls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -76,9 +77,52 @@ namespace MiniGame
 
             g.Clear(Color.White);
 
+            //時計盤
+            double rad;
+            Point p = new Point();
+            string text;
+            Font font = new Font("MS pゴシック", 20);
+            SizeF sizef;
+            StringFormat sf = new StringFormat(StringFormat.GenericTypographic);
+
+            //目盛り
+            for (int i = 0; i < 60; i++)
+            {
+                rad = 6 * i * Math.PI / 180;
+                p.X = (int)((PS.X - P0.X) * Math.Cos(rad) - (PS.Y - P0.Y) * Math.Sin(rad) + P0.X);
+                p.Y = (int)((PS.X - P0.X) * Math.Sin(rad) + (PS.Y - P0.Y) * Math.Cos(rad) + P0.Y);
+                
+                if (i % 5 == 0)
+                {
+                    g.DrawLine(Pens.DeepSkyBlue, P0, p);
+                }
+                else
+                {
+                    g.DrawLine(Pens.Gray, P0, p);
+                }
+            }
+
+            for (int i = 1; i <= 12; i++)
+            {
+                text = i.ToString();
+                rad = 30 * i * Math.PI / 180;
+                p.X = (int)((PN.X - P0.X) * Math.Cos(rad) - (PN.Y - P0.Y) * Math.Sin(rad) + P0.X);
+                p.Y = (int)((PN.X - P0.X) * Math.Sin(rad) + (PN.Y - P0.Y) * Math.Cos(rad) + P0.Y);
+
+                sizef = g.MeasureString(text, font, this.Width, sf);
+                g.DrawString(text, font, Brushes.Blue, p.X - sizef.Width / 2, p.Y - sizef.Height / 2, sf);
+            }
+
+            Brush brush = new SolidBrush(SystemColors.Control);
+            g.FillEllipse(brush, 50, 50, 200, 200);
+
             g.DrawLine(Pens.Blue, P0, Q2);  //長針
             g.DrawLine(Pens.Red, P0, Q3);   //短針
             g.DrawLine(Pens.Green, P0, Q1); //秒針
+
+            //リソース解放する
+            font.Dispose();
+            sf.Dispose();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -126,6 +170,13 @@ namespace MiniGame
             Q3.X = (int)((P3.X - P0.X) * Math.Cos(radH) - (P3.Y - P0.Y) * Math.Sin(radH) + P0.X);
             Q3.Y = (int)((P3.X - P0.X) * Math.Sin(radH) + (P3.Y - P0.Y) * Math.Cos(radH) + P0.Y);
 
+        }
+
+        private void btn戻る_Click(object sender, EventArgs e)
+        {
+            Frmメニュー frm = new Frmメニュー();
+            ClsForm.Instance.formShow(frm);
+            this.Close();
         }
     }
 }

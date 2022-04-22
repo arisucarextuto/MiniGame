@@ -31,17 +31,29 @@ namespace MiniGame
         {
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btn戻る = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // btn戻る
+            // 
+            this.btn戻る.Location = new System.Drawing.Point(297, 326);
+            this.btn戻る.Name = "btn戻る";
+            this.btn戻る.Size = new System.Drawing.Size(75, 23);
+            this.btn戻る.TabIndex = 0;
+            this.btn戻る.Text = "戻る";
+            this.btn戻る.UseVisualStyleBackColor = true;
+            this.btn戻る.Click += new System.EventHandler(this.btn戻る_Click);
+            // 
             // Frm時計
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(384, 361);
+            this.Controls.Add(this.btn戻る);
             this.Name = "Frm時計";
             this.Text = "時計";
             this.Load += new System.EventHandler(this.Frm時計_Load);
@@ -53,5 +65,6 @@ namespace MiniGame
         #endregion
 
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button btn戻る;
     }
 }

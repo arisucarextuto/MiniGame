@@ -87,6 +87,12 @@ namespace MiniGame
                 ClsForm.Instance.formShow(frm);
                 this.Close();
             }
+            else if (btn.Name == btn時計.Name)
+            {
+                Frm時計 frm = new Frm時計();
+                ClsForm.Instance.formShow(frm);
+                this.Close();
+            }
             else if (btn.Name == btn戻る.Name)
             {
                 Frmログイン frm = new Frmログイン();

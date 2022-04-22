@@ -43,6 +43,7 @@ namespace MiniGame
             this.btnパズル = new System.Windows.Forms.Button();
             this.btnタイマー = new System.Windows.Forms.Button();
             this.btn電卓 = new System.Windows.Forms.Button();
+            this.btn時計 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnじゃんけん
@@ -185,11 +186,22 @@ namespace MiniGame
             this.btn電卓.UseVisualStyleBackColor = true;
             this.btn電卓.Click += new System.EventHandler(this.btn_Click);
             // 
+            // btn時計
+            // 
+            this.btn時計.Location = new System.Drawing.Point(204, 12);
+            this.btn時計.Name = "btn時計";
+            this.btn時計.Size = new System.Drawing.Size(75, 23);
+            this.btn時計.TabIndex = 10;
+            this.btn時計.Text = "時計";
+            this.btn時計.UseVisualStyleBackColor = true;
+            this.btn時計.Click += new System.EventHandler(this.btn_Click);
+            // 
             // Frmメニュー
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.btn時計);
             this.Controls.Add(this.btn戻る);
             this.Controls.Add(this.btn終了);
             this.Controls.Add(this.btnパズル);
@@ -227,5 +239,6 @@ namespace MiniGame
         private System.Windows.Forms.Button btnパズル;
         private System.Windows.Forms.Button btnタイマー;
         private System.Windows.Forms.Button btn電卓;
+        private System.Windows.Forms.Button btn時計;
     }
 }
