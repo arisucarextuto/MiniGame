@@ -49,7 +49,15 @@
     <Compile Include="Cls\ClsForm.cs" />
     <Compile Include="Cls\ClsPiece.cs" />
     <Compile Include="Cls\ClsPuzzle.cs" />
+    <Compile Include="Cls\ClsSetting.cs" />
+    <Compile Include="Cls\ClsSlideshow.cs" />
     <Compile Include="Cls\ClsUtil.cs" />
+    <Compile Include="Screen\Frmスライドショー.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\Frmスライドショー.Designer.cs">
+      <DependentUpon>Frmスライドショー.cs</DependentUpon>
+    </Compile>
     <Compile Include="Const.cs" />
     <Compile Include="Frmタイマー.cs">
       <SubType>Form</SubType>
@@ -62,6 +70,18 @@
     </Compile>
     <Compile Include="Frm時計.Designer.cs">
       <DependentUpon>Frm時計.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\Frmプロジェクト読込み.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\Frmプロジェクト読込み.Designer.cs">
+      <DependentUpon>Frmプロジェクト読込み.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\Frm設定.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\Frm設定.Designer.cs">
+      <DependentUpon>Frm設定.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm電卓.cs">
       <SubType>Form</SubType>
@@ -150,6 +170,21 @@
     <Compile Include="Masu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screen\Frm設定1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\Frm設定1.Designer.cs">
+      <DependentUpon>Frm設定1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\Frm設定2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\Frm設定2.Designer.cs">
+      <DependentUpon>Frm設定2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Screen\Frmスライドショー.resx">
+      <DependentUpon>Frmスライドショー.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frmタイマー.resx">
       <DependentUpon>Frmタイマー.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,6 +243,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Screen\Frmプロジェクト読込み.resx">
+      <DependentUpon>Frmプロジェクト読込み.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screen\Frm設定.resx">
+      <DependentUpon>Frm設定.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screen\Frm設定1.resx">
+      <DependentUpon>Frm設定1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screen\Frm設定2.resx">
+      <DependentUpon>Frm設定2.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
