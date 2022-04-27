@@ -38,8 +38,8 @@ namespace MiniGame.Screen
             this.btnDown = new System.Windows.Forms.Button();
             this.btnUp = new System.Windows.Forms.Button();
             this.btn追加 = new System.Windows.Forms.Button();
-            this.btn参照 = new System.Windows.Forms.Button();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.btn参照 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvImageList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvImage)).BeginInit();
             this.SuspendLayout();
@@ -87,9 +87,9 @@ namespace MiniGame.Screen
             // 
             this.txtフォルダパス.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtフォルダパス.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtフォルダパス.Location = new System.Drawing.Point(12, 13);
+            this.txtフォルダパス.Location = new System.Drawing.Point(13, 12);
             this.txtフォルダパス.Name = "txtフォルダパス";
-            this.txtフォルダパス.Size = new System.Drawing.Size(700, 23);
+            this.txtフォルダパス.Size = new System.Drawing.Size(698, 23);
             this.txtフォルダパス.TabIndex = 12;
             this.txtフォルダパス.TextChanged += new System.EventHandler(this.txtフォルダパス_TextChanged);
             // 
@@ -133,6 +133,11 @@ namespace MiniGame.Screen
             this.btn追加.UseVisualStyleBackColor = true;
             this.btn追加.Click += new System.EventHandler(this.btn追加_Click);
             // 
+            // saveFileDialog
+            // 
+            this.saveFileDialog.Filter = "プロジェクトファイル(*.xml)|*.xml";
+            this.saveFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog_FileOk);
+            // 
             // btn参照
             // 
             this.btn参照.Location = new System.Drawing.Point(717, 12);
@@ -142,11 +147,6 @@ namespace MiniGame.Screen
             this.btn参照.Text = "参照";
             this.btn参照.UseVisualStyleBackColor = true;
             this.btn参照.Click += new System.EventHandler(this.btn参照_Click);
-            // 
-            // saveFileDialog
-            // 
-            this.saveFileDialog.Filter = "プロジェクトファイル(*.xml)|*.xml";
-            this.saveFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog_FileOk);
             // 
             // Frm設定2
             // 
@@ -166,6 +166,7 @@ namespace MiniGame.Screen
             this.Name = "Frm設定2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "設定(2/2)";
+            this.Load += new System.EventHandler(this.Frm設定2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvImageList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvImage)).EndInit();
             this.ResumeLayout(false);
@@ -184,7 +185,7 @@ namespace MiniGame.Screen
         private System.Windows.Forms.Button btnDown;
         private System.Windows.Forms.Button btnUp;
         private System.Windows.Forms.Button btn追加;
-        private System.Windows.Forms.Button btn参照;
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
+        private System.Windows.Forms.Button btn参照;
     }
 }

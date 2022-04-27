@@ -149,6 +149,7 @@ namespace MiniGame.Screen
             this.Name = "Frm設定1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "設定(1/2)";
+            this.Load += new System.EventHandler(this.Frm設定1_Load);
             this.gb自動設定.ResumeLayout(false);
             this.gb自動設定.PerformLayout();
             this.gb画像切替.ResumeLayout(false);

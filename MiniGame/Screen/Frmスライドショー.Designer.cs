@@ -109,9 +109,12 @@ namespace MiniGame.Cls
             this.Controls.Add(this.btn停止);
             this.Controls.Add(this.btn戻る);
             this.Controls.Add(this.pb画像);
+            this.KeyPreview = true;
             this.Name = "Frmスライドショー";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "スライドショー";
+            this.Load += new System.EventHandler(this.Frmスライドショー_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Frmスライドショー_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pb画像)).EndInit();
             this.ResumeLayout(false);
 
