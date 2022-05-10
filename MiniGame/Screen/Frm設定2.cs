@@ -365,11 +365,24 @@ namespace MiniGame.Screen
 
         private void btn削除_Click(object sender, EventArgs e)
         {
+            List<int> rowNoList = GetdgvImageListRowNo();
+
+            //チェックが１つであること
+            if (rowNoList.Count != 1)
+            {
+                MessageBox.Show("行を移動する場合はチェックを１つにして下さい。");
+                return;
+            }
+
             //後ろから消していく
             for (int i = dgvImageList.Rows.Count - 1; i >= 0; i--)
             {
                 if ((bool)dgvImageList.Rows[i].Cells[(int)DgvImageCOL.選択].Value == true)
                 {
+                    //削除箇所の更新
+                    dgvImageList.Rows[i + 1].Cells[(int)DgvImageCOL.No].Value = dgvImageList.Rows[i].Cells[(int)DgvImageCOL.No].Value;
+
+                    //修正番号
                     Debug.WriteLine("削除あり : " + dgvImageList.Rows[i].Cells[(int)DgvImageCOL.No].Value + " 番");
                     dgvImageList.Rows.RemoveAt(i);
                 }
