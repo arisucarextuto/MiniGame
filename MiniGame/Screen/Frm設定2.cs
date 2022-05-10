@@ -21,6 +21,8 @@ namespace MiniGame.Screen
         const int dgvImageListRowHeight = 60;
         const int imgWidth = 50;
         const int imgHeight = 50;
+
+        public bool savecheck = false;
         public Frm設定2()
         {
             InitializeComponent();
@@ -32,7 +34,14 @@ namespace MiniGame.Screen
 
             if (btn.Text == btn戻る.Text)
             {
-                //SaveData();
+                if (savecheck)
+                {
+                    savecheck = false;
+                }
+                else
+                {
+                    SaveData();
+                }
 
                 Frm設定1 frm = new Frm設定1();
                 frm.Args = Args;
@@ -376,6 +385,7 @@ namespace MiniGame.Screen
         {
             string fileName = "";
             StreamWriter sw = null;
+            savecheck = true;
 
             if (check() == false)
             {
