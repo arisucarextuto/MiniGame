@@ -82,7 +82,7 @@ namespace MiniGame.Screen
             this.Controls.Add(this.btn次へ);
             this.Name = "Frmプロジェクト読込み";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Frmプロジェクト読込み";
+            this.Text = "プロジェクト読込み";
             this.Load += new System.EventHandler(this.Frmプロジェクト読込み_Load);
             this.ResumeLayout(false);
 

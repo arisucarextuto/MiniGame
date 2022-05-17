@@ -129,7 +129,7 @@ namespace MiniGame
             this.Controls.Add(this.dgv結果);
             this.Name = "Frm在庫検索";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Frm在庫検索";
+            this.Text = "在庫検索";
             this.gb条件.ResumeLayout(false);
             this.gb条件.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv結果)).EndInit();

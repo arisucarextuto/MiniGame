@@ -29,21 +29,21 @@ namespace MiniGame
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn閉じる = new System.Windows.Forms.Button();
+            this.btn戻る = new System.Windows.Forms.Button();
             this.btn実行 = new System.Windows.Forms.Button();
             this.btn設定 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btn閉じる
+            // btn戻る
             // 
-            this.btn閉じる.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn閉じる.Location = new System.Drawing.Point(12, 127);
-            this.btn閉じる.Name = "btn閉じる";
-            this.btn閉じる.Size = new System.Drawing.Size(190, 51);
-            this.btn閉じる.TabIndex = 6;
-            this.btn閉じる.Text = "閉じる";
-            this.btn閉じる.UseVisualStyleBackColor = true;
-            this.btn閉じる.Click += new System.EventHandler(this.btn_Click);
+            this.btn戻る.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn戻る.Location = new System.Drawing.Point(12, 127);
+            this.btn戻る.Name = "btn戻る";
+            this.btn戻る.Size = new System.Drawing.Size(190, 51);
+            this.btn戻る.TabIndex = 6;
+            this.btn戻る.Text = "戻る";
+            this.btn戻る.UseVisualStyleBackColor = true;
+            this.btn戻る.Click += new System.EventHandler(this.btn_Click);
             // 
             // btn実行
             // 
@@ -72,12 +72,12 @@ namespace MiniGame
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(214, 191);
-            this.Controls.Add(this.btn閉じる);
+            this.Controls.Add(this.btn戻る);
             this.Controls.Add(this.btn実行);
             this.Controls.Add(this.btn設定);
             this.Name = "Frm設定";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Frm設定";
+            this.Text = "設定";
             this.Load += new System.EventHandler(this.Frm設定_Load);
             this.ResumeLayout(false);
 
@@ -85,7 +85,7 @@ namespace MiniGame
 
         #endregion
 
-        private System.Windows.Forms.Button btn閉じる;
+        private System.Windows.Forms.Button btn戻る;
         private System.Windows.Forms.Button btn実行;
         private System.Windows.Forms.Button btn設定;
     }

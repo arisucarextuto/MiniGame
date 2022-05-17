@@ -26,9 +26,10 @@ namespace MiniGame
                 Frmプロジェクト読込み frm = new Frmプロジェクト読込み();
                 ClsForm.Instance.formShow(frm);
             }
-            else if (btn.Text == btn閉じる.Text)
+            else if (btn.Text == btn戻る.Text)
             {
-
+                Frmメニュー frm = new Frmメニュー();
+                ClsForm.Instance.formShow(frm);
             }
             this.Close();
         }
