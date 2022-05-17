@@ -93,6 +93,12 @@ namespace MiniGame
                 ClsForm.Instance.formShow(frm);
                 this.Close();
             }
+            else if (btn.Name == btnスライドショー.Name)
+            {
+                Frm設定 frm = new Frm設定();
+                ClsForm.Instance.formShow(frm);
+                this.Close();
+            }
             else if (btn.Name == btn戻る.Name)
             {
                 Frmログイン frm = new Frmログイン();

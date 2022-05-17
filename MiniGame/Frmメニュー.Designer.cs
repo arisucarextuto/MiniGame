@@ -44,6 +44,7 @@ namespace MiniGame
             this.btnタイマー = new System.Windows.Forms.Button();
             this.btn電卓 = new System.Windows.Forms.Button();
             this.btn時計 = new System.Windows.Forms.Button();
+            this.btnスライドショー = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnじゃんけん
@@ -68,7 +69,7 @@ namespace MiniGame
             // 
             // btn終了
             // 
-            this.btn終了.Location = new System.Drawing.Point(197, 226);
+            this.btn終了.Location = new System.Drawing.Point(219, 226);
             this.btn終了.Name = "btn終了";
             this.btn終了.Size = new System.Drawing.Size(75, 23);
             this.btn終了.TabIndex = 11;
@@ -108,7 +109,7 @@ namespace MiniGame
             // 
             // btnカレンダー
             // 
-            this.btnカレンダー.Location = new System.Drawing.Point(108, 70);
+            this.btnカレンダー.Location = new System.Drawing.Point(204, 41);
             this.btnカレンダー.Name = "btnカレンダー";
             this.btnカレンダー.Size = new System.Drawing.Size(90, 23);
             this.btnカレンダー.TabIndex = 2;
@@ -118,7 +119,7 @@ namespace MiniGame
             // 
             // btnカレンダー管理
             // 
-            this.btnカレンダー管理.Location = new System.Drawing.Point(108, 99);
+            this.btnカレンダー管理.Location = new System.Drawing.Point(204, 70);
             this.btnカレンダー管理.Name = "btnカレンダー管理";
             this.btnカレンダー管理.Size = new System.Drawing.Size(90, 23);
             this.btnカレンダー管理.TabIndex = 4;
@@ -128,7 +129,7 @@ namespace MiniGame
             // 
             // btn在庫検索
             // 
-            this.btn在庫検索.Location = new System.Drawing.Point(108, 128);
+            this.btn在庫検索.Location = new System.Drawing.Point(108, 99);
             this.btn在庫検索.Name = "btn在庫検索";
             this.btn在庫検索.Size = new System.Drawing.Size(90, 23);
             this.btn在庫検索.TabIndex = 6;
@@ -138,7 +139,7 @@ namespace MiniGame
             // 
             // btn在庫更新
             // 
-            this.btn在庫更新.Location = new System.Drawing.Point(108, 157);
+            this.btn在庫更新.Location = new System.Drawing.Point(108, 128);
             this.btn在庫更新.Name = "btn在庫更新";
             this.btn在庫更新.Size = new System.Drawing.Size(90, 23);
             this.btn在庫更新.TabIndex = 8;
@@ -148,7 +149,7 @@ namespace MiniGame
             // 
             // btn戻る
             // 
-            this.btn戻る.Location = new System.Drawing.Point(197, 197);
+            this.btn戻る.Location = new System.Drawing.Point(219, 197);
             this.btn戻る.Name = "btn戻る";
             this.btn戻る.Size = new System.Drawing.Size(75, 23);
             this.btn戻る.TabIndex = 10;
@@ -190,17 +191,27 @@ namespace MiniGame
             // 
             this.btn時計.Location = new System.Drawing.Point(204, 12);
             this.btn時計.Name = "btn時計";
-            this.btn時計.Size = new System.Drawing.Size(75, 23);
+            this.btn時計.Size = new System.Drawing.Size(90, 23);
             this.btn時計.TabIndex = 10;
             this.btn時計.Text = "時計";
             this.btn時計.UseVisualStyleBackColor = true;
             this.btn時計.Click += new System.EventHandler(this.btn_Click);
             // 
+            // btnスライドショー
+            // 
+            this.btnスライドショー.Location = new System.Drawing.Point(108, 70);
+            this.btnスライドショー.Name = "btnスライドショー";
+            this.btnスライドショー.Size = new System.Drawing.Size(90, 23);
+            this.btnスライドショー.TabIndex = 8;
+            this.btnスライドショー.Text = "スライドショー";
+            this.btnスライドショー.UseVisualStyleBackColor = true;
+            this.btnスライドショー.Click += new System.EventHandler(this.btn_Click);
+            // 
             // Frmメニュー
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(306, 261);
             this.Controls.Add(this.btn時計);
             this.Controls.Add(this.btn戻る);
             this.Controls.Add(this.btn終了);
@@ -211,6 +222,7 @@ namespace MiniGame
             this.Controls.Add(this.btnじゃんけん);
             this.Controls.Add(this.btn電卓);
             this.Controls.Add(this.btnタイマー);
+            this.Controls.Add(this.btnスライドショー);
             this.Controls.Add(this.btn在庫更新);
             this.Controls.Add(this.btn在庫検索);
             this.Controls.Add(this.btnカレンダー管理);
@@ -240,5 +252,6 @@ namespace MiniGame
         private System.Windows.Forms.Button btnタイマー;
         private System.Windows.Forms.Button btn電卓;
         private System.Windows.Forms.Button btn時計;
+        private System.Windows.Forms.Button btnスライドショー;
     }
 }
